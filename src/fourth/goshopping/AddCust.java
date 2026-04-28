@@ -1,3 +1,5 @@
+package fourth.goshopping;
+
 import java.util.Scanner;
 
 public class AddCust {
