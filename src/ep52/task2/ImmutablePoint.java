@@ -25,4 +25,12 @@ public class ImmutablePoint {
         double dy = this.y - other.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
+
+    public String getInfo() {
+        return "(" + x + ", " + y + ")";
+    }
+
+    public void printInfo() {
+        System.out.print("(" + x + ", " + y + ")");
+    }
 }
