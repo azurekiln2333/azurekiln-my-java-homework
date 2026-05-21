@@ -1,0 +1,15 @@
+@startuml
+
+final class ImmutablePoint {
+    - x : double
+    - y : double
+
+    + ImmutablePoint(x:double,y:double)
+
+    + getX() : double
+    + getY() : double
+
+    + distance(other:ImmutablePoint) : double
+}
+
+@enduml
