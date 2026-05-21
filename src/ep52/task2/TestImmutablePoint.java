@@ -11,17 +11,21 @@ public class TestImmutablePoint {
         System.out.println("点 p2：" + p2.getInfo());
         System.out.println("点 p3：" + p3.getInfo());
 
+        System.out.println();
         System.out.println("=== 距离测试 ===");
         System.out.println("p1 到 p2 距离：" + p1.distance(p2));
         System.out.println("p1 到 原点 距离：" + p1.distance(new ImmutablePoint(0, 0)));
         System.out.println("p2 到 原点 距离：" + p1.distance(new ImmutablePoint(0, 0)));
 
         // 验证不可变性
+        System.out.println();
         System.out.println("=== 验证不可变性 ===");
         System.out.println("// p1.x = 10.0; // 无法为final变量赋值");
         System.out.println("// p1.setX(10.0); // 没有setter方法");
         System.out.println("p1 的坐标仍然是：" + p1.getInfo());
 
+        // 校验
+        System.out.println();
         System.out.println("=== equals 和 hashCode 测试 ===");
         System.out.println("p1.equals(p2): " + p1.equals(p2));
         System.out.println("p1.equals(p3): " + p1.equals(p3));
