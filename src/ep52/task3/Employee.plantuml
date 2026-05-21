@@ -1,0 +1,33 @@
+@startuml
+
+class Employee {
+
+    - id : String
+    - name : String
+    - baseSalary : double
+    - hireYear : int
+
+    - {static} totalEmployees : int
+    - {static} companyName : String
+
+    + Employee()
+    + Employee(id:String,name:String,baseSalary:double,hireYear:int)
+
+    + getId() : String
+    + getName() : String
+    + getBaseSalary() : double
+    + getHireYear() : int
+
+    + setId(id:String) : void
+    + setName(name:String) : void
+    + setBaseSalary(baseSalary:double) : void
+    + setHireYear(hireYear:int) : void
+
+    + getAnnualIncome() : double
+    + displayInfo() : void
+
+    + {static} showTotalEmployees() : void
+    + {static} setCompanyName(companyName:String) : void
+}
+
+@enduml
