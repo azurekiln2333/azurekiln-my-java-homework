@@ -68,7 +68,7 @@ public class Student {
 
     // 打印所有信息
     public void showInfo() {
-        System.out.println("学号：" + studentId
+        System.out.println("学号：" + studentId + "\n"
                 + "姓名：" + name + "\n"
                 + "年龄：" + age + "\n"
                 + "成绩：" + score);

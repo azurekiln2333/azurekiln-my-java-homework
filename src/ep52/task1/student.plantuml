@@ -1,0 +1,26 @@
+@startuml
+
+class Student {
+    - studentId : String
+    - name : String
+    - age : int
+    - score : double
+
+    + Student()
+    + Student(studentId:String)
+    + Student(studentId:String,name:String,age:int,score:double)
+
+    + getStudentId() : String
+    + getName() : String
+    + getAge() : int
+    + getScore() : double
+
+    + setStudentId(studentId:String) : void
+    + setName(name:String) : void
+    + setAge(age:int) : void
+    + setScore(score:double) : void
+
+    + showInfo() : void
+}
+
+@enduml
