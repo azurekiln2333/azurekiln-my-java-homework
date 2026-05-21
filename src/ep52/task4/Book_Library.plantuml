@@ -1,0 +1,51 @@
+@startuml
+
+class Book {
+
+    - title : String
+    - author : String
+    - isbn : String
+    - borrowed : boolean
+    - borrowedBy : String
+
+    + Book(title:String,author:String,isbn:String)
+
+    + getTitle() : String
+    + getAuthor() : String
+    + getIsbn() : String
+
+    + isBorrowed() : boolean
+    + getBorrowedBy() : String
+
+    + borrow(userName:String) : void
+    + returnBook() : void
+}
+
+class Library {
+
+    - books : Book[]
+    - count : int
+    - {static} totalBooks : int
+
+    + Library(size:int)
+
+    + addBook(b:Book) : void
+
+    + searchByAuthor(author:String) : Book[]
+
+    + borrowBook(isbn:String,userName:String) : void
+
+    + returnBook(isbn:String) : void
+
+    + getTotalBooksInLibrary() : int
+
+    + getMostPopularAuthor() : String
+
+    + {static} searchAllLibraries(libs:Library[],author:String) : ArrayList<Book>
+
+    + {static} getTotalBooks() : int
+}
+
+Library "1" o-- "*" Book
+
+@enduml
