@@ -1,4 +1,4 @@
-package fourth.goshopping;
+package fourth;
 
 public class CharsTools {
     public static void main(String[] args) {
